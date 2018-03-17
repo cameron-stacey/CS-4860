@@ -1,0 +1,5 @@
+wisconsin <- read.csv("~/CS 4860/Homework 1/wisconsin.csv")
+View(wisconsin)
+#model <- glm(formula = V11 ~., family=binomial(link = 'logit'), data=wisconsin)
+model <- glm(wisconsin$class~wisconsin$var1 + wisconsin$var2 + wisconsin$var3 + wisconsin$var4 + wisconsin$var5 + wisconsin$var6 + wisconsin$var7 + wisconsin$var8 + wisconsin$var9 + wisconsin$var10 + wisconsin$var11 + wisconsin$var12 + wisconsin$var13 + wisconsin$var14 + wisconsin$var15 + wisconsin$var16 + wisconsin$var17 + wisconsin$var18 + wisconsin$var19 + wisconsin$var20 + wisconsin$var21 + wisconsin$var22 + wisconsin$var23 + wisconsin$var24 + wisconsin$var25 + wisconsin$var26 + wisconsin$var27 + wisconsin$var28 + wisconsin$var29 + wisconsin$var30, binomial)
+summary(model)

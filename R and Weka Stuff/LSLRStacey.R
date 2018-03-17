@@ -1,0 +1,5 @@
+library(readxl)
+Folds5x2_pp <- read_excel("Homework 1/Folds5x2_pp.xlsx")
+View(Folds5x2_pp)
+fit <- lm(Folds5x2_pp$PE ~ Folds5x2_pp$AT + Folds5x2_pp$V + Folds5x2_pp$AP + Folds5x2_pp$RH)
+summary(fit)
